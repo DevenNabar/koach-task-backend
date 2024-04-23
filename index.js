@@ -1,6 +1,9 @@
 import express from "express";
 import cors from "cors";
-import mongoose, { connect } from "mongoose";
+import mongoose from "mongoose";
+import dotenv from "dotenv";
+dotenv.config();
+
 import bookRoutes from "./routes/book.routes.js";
 
 const app = express();
@@ -11,12 +14,10 @@ app.use(express.json());
 // Connect to MongoDB
 async function connectToMongodb() {
   try {
-    await mongoose.connect(
-      "mongodb+srv://root:FVVkCcAKVFSJuABL@books.r48iimr.mongodb.net/books?retryWrites=true&w=majority&appName=Books"
-    );
+    await mongoose.connect(process.env.MONGO_URI);
     console.log("Successfully connected to MongoDB");
-    app.listen(3001, () => {
-      console.log("Server is running on port 3001");
+    app.listen(process.env.PORT, () => {
+      console.log(`Server is running on port ${process.env.PORT}`);
     });
   } catch (err) {
     console.error("Error connecting to MongoDB: ", err);
