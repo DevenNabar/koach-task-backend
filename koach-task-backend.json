@@ -34,7 +34,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"author\": \"test author 1 \",\n    \"title\": \"Test book 1\",\n    \"description\": \"test description 1\"\n}",
+					"raw": "{\n    \"author\": \"test author 1 \",\n    \"title\": \"Test book 1\",\n    \"description\": \"test description 1\",\n    \"quantity\": 100\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -64,7 +64,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"id\": \"66282eaa2bad9ce56cc75dd6\",\n    \"author\": \"test author 2 \",\n    \"title\": \"book 2\",\n    \"description\": \"description 2\"\n}",
+					"raw": "{\n    \"id\": \"6629c15a53b9718784c11682\",\n    \"author\": \"test author 2 \",\n    \"title\": \"book 2\",\n    \"description\": \"description 2\",\n    \"quantity\": 10\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -102,7 +102,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://pacific-sierra-14520-f65fe448317a.herokuapp.com/api/books/66282eaa2bad9ce56cc75dd6",
+					"raw": "https://pacific-sierra-14520-f65fe448317a.herokuapp.com/api/books/6629c15a53b9718784c11682",
 					"protocol": "https",
 					"host": [
 						"pacific-sierra-14520-f65fe448317a",
@@ -112,7 +112,7 @@
 					"path": [
 						"api",
 						"books",
-						"66282eaa2bad9ce56cc75dd6"
+						"6629c15a53b9718784c11682"
 					]
 				}
 			},
@@ -136,7 +136,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://pacific-sierra-14520-f65fe448317a.herokuapp.com/api/books/66282eaa2bad9ce56cc75dd6",
+					"raw": "https://pacific-sierra-14520-f65fe448317a.herokuapp.com/api/books/6629c15a53b9718784c11682",
 					"protocol": "https",
 					"host": [
 						"pacific-sierra-14520-f65fe448317a",
@@ -146,7 +146,7 @@
 					"path": [
 						"api",
 						"books",
-						"66282eaa2bad9ce56cc75dd6"
+						"6629c15a53b9718784c11682"
 					]
 				}
 			},
