@@ -34,7 +34,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"author\": \"test author 1 \",\n    \"title\": \"Test book 1\",\n    \"description\": \"test description 1\",\n    \"quantity\": 100\n}",
+					"raw": "{\n    \"author\": \"test author 1 \",\n    \"title\": \"Test book 1\",\n    \"description\": \"test description 1\",\n    \"quantity\": 100,\n    \"price\" : 10.99\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -64,7 +64,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"id\": \"6629c15a53b9718784c11682\",\n    \"author\": \"test author 2 \",\n    \"title\": \"book 2\",\n    \"description\": \"description 2\",\n    \"quantity\": 10\n}",
+					"raw": "{\n    \"id\": \"6629c15a53b9718784c11682\",\n    \"author\": \"test author 2 \",\n    \"title\": \"book 2\",\n    \"description\": \"description 2\",\n    \"quantity\": 10,\n    \"price\" : 11.99\n}",
 					"options": {
 						"raw": {
 							"language": "json"

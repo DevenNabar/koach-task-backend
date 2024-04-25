@@ -26,13 +26,13 @@ const getBookById = async (req, res) => {
 };
 
 const createBook = async (req, res) => {
-  const { title, author, description, quantity } = req.body;
-  if (!title || !author || !description || !quantity) {
+  const { title, author, description, quantity, price } = req.body;
+  if (!title || !author || !description || !quantity || !price) {
     return res.status(400).json({ message: "All fields are required" });
   }
 
   try {
-    const newBook = new Book({ title, author, description, quantity });
+    const newBook = new Book({ title, author, description, quantity, price });
     const savedBook = await newBook.save();
     res.status(201).json(savedBook);
   } catch (err) {
@@ -42,14 +42,14 @@ const createBook = async (req, res) => {
 
 const updateBook = async (req, res) => {
   const { id, title, author, description, quantity } = req.body;
-  if (!id || !title || !author || !description || !quantity) {
+  if (!id || !title || !author || !description || !quantity || !price) {
     return res.status(400).json({ message: "All fields are required" });
   }
 
   try {
     const updatedBook = await Book.findByIdAndUpdate(
       id,
-      { title, author, description, quantity },
+      { title, author, description, quantity, price },
       { new: true }
     );
     if (!updatedBook) {
